@@ -1,0 +1,33 @@
+/* Basic Format */
+html {
+    font-family: Helvetica, 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+ul {
+    padding: 0;
+    overflow: hidden;
+}
+ul li {
+    list-style: none;
+    float: left;
+    margin-right: 4em;
+}
+ul li strong {
+    padding-right: 1em;
+}
+h1 {
+    font-size: 3.2em;
+}
+h2 {
+    font-size: 2.4em;
+}
+ul, p {
+    font-size: 1.4em;
+}
+strong {
+    display: block;
+}
+.basicInfo strong, 
+.contact strong {
+    display: inline;
+}

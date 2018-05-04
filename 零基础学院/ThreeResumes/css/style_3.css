@@ -1,0 +1,86 @@
+/* Basic Format */
+html {
+    font-family: Helvetica, 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+ul {
+    padding: 0;
+    overflow: hidden;
+}
+ul li {
+    list-style: none;
+    float: left;
+    margin-right: 4em;
+}
+ul li strong {
+    padding-right: 1em;
+}
+h1 {
+    font-size: 2.4em;
+}
+h2 {
+    font-size: 1.2em;
+}
+ul, p {
+    font-size: 1em;
+    margin: 0;
+}
+strong {
+    display: inline;
+}
+/* Layout */
+.container {
+    border: 1px solid gray;
+}
+.container h1 {
+    background: gray;
+    color: white;
+    margin: 0;
+    padding: .5em 0 .5em .5em;
+}
+.container .main div {
+    border-bottom: 1px solid gray;
+    height: 6em;
+}
+.container .main div:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.container .main .basicInfo h2, 
+.container .main .basicInfo ul,
+.container .main .contact   h2,
+.container .main .contact   ul,
+.container .main .ability   h2,
+.container .main .ability   p,
+.container .main .education h2,
+.container .main .education p,
+.container .main .project   h2,
+.container .main .project   p {
+    float: left;
+}
+.container .main .basicInfo h2,
+.container .main .contact   h2,
+.container .main .ability   h2,
+.container .main .education h2,
+.container .main .project   h2 {
+    background: lightgray;
+    margin: 0;
+    height: inherit;
+    width: 5em;
+    text-align: center;
+    line-height: 5em;
+    border-bottom: 1px solid white;
+}
+.container .main div ul {
+    margin: .5em 0 0 .5em;
+}
+
+.container .main .ability   div,
+.container .main .education div,
+.container .main .project   div {
+    float: left;
+    height: 4em;
+    margin: .5em 0 0 .5em;
+}
+.container .main div p {
+    clear: both;
+}
