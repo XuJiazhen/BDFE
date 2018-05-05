@@ -57,26 +57,24 @@ header nav li {
 .banner ul {
     position: absolute;
     right: 0;
-    top: 22rem;
+    bottom: 0;
+    padding: 1rem 0;
 }
 .banner li {
-    float: left;
+    display: inline-block;
     margin-left: .5rem;
 }
 .banner li a {
     text-decoration: none;
     color: black;
-    display: block;
     background: white;
     border: 1px solid black;
-    width: 2rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
     text-align: center;
     transition: all .2s;
+    padding: .5rem;
 }
-.banner li a:hover {
-    height: 3rem;
+.banner li:hover a{
+    padding-top: 1rem;
 }
 
 /* Main-Nav Layout */
