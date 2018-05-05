@@ -74,7 +74,7 @@ header nav li {
     padding: .5rem;
 }
 .banner li:hover a{
-    padding-top: 1rem;
+    padding-top: 1.3rem;
 }
 
 /* Main-Nav Layout */
@@ -154,4 +154,11 @@ footer p {
     margin: 0 auto;
     padding-top: 1rem;
 
+}
+.selected {
+    padding-top: 1.3rem !important;
+}
+.active {
+    background: white !important;
+    border-bottom: none !important;
 }
