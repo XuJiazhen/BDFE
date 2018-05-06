@@ -59,10 +59,13 @@ header nav li {
     right: 0;
     bottom: 0;
     padding: 1rem 0;
+    user-select: none;
+
 }
 .banner li {
     display: inline-block;
     margin-left: .5rem;
+   
 }
 .banner li a {
     text-decoration: none;
