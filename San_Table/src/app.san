@@ -1,0 +1,58 @@
+<template>
+    <div class="app">
+        <button type="button" name="button" on-click="addItem">添加</button>
+        <table>
+                <tr>
+                    <th>姓名</th>
+                    <th>审核状态</th>
+                    <th>操作</th>
+                </tr>
+                <tr  s-for="i, index in items">
+                    <td>{{i.name}}</td>
+                    <td>{{i.state}}</td>
+                    <td><button on-click="rmItem(index)">{{i.button}}</button></td>
+                </tr>
+        </table>
+    </div>
+</template>
+
+<script>
+
+export default {
+    initData() {
+        return {
+            items: [
+                {name: '张三', state: '合格', button: '删除'},
+                {name: '李四', state: '不合格', button: '删除'},
+                {name: '王五', state: '待审核', button: '审核'},
+                {name: '赵六', state: '待审核', button: '审核'},
+                {name: '孙七', state: '待审核', button: '审核'}
+            ]
+        }
+    },
+    addItem: function () {
+        let item = this.data.get('items')[0];
+        this.data.push('items', item);
+    },
+    rmItem(index) {
+        let item = this.data.get('items')[index];
+        if (item.button === '删除') {
+            this.data.removeAt('items', index);
+        }
+        if (item.button === '审核') {
+            this.data.set('items.' + index + '.state', '合格');
+        }
+    }
+}
+
+</script>
+
+<style>
+    body {
+        background: lightblue;
+    }
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
